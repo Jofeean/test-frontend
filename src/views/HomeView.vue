@@ -20,7 +20,7 @@ export default {
     const submitFile = () => {
       var formData = new FormData();
       formData.append("file", file.value.files[0]);
-      axios.post("http://localhost:8000/api/upload_video", formData, {
+      axios.post("http://170.187.156.213:8000/api/upload_video", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
